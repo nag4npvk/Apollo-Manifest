@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_eligible_for_Student_Reimbursement__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*IF( 
+AND( Is_a_student__c , NOT( Has_any_backlogs__c ) , Academic_Attendence_Percentage__c &gt; 75), 
+true, false)
+
+ IF(logical_test, value_if_true, value_if_false) */
+
+/*IF( 
+AND( Is_a_student__c = true, Has_any_backlogs__c = false , Academic_Attendence_Percentage__c &gt; 75), 
+true, false)
+ IF(Is_a_student__c = true, true, false)*/
+
+
+ IF( AND(Is_a_student__c = true,   Academic_Attendence_Percentage__c &gt; 75) , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is eligible for Student Reimbursement</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

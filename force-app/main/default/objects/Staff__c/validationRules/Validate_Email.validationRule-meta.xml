@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Email</fullName>
+    <active>true</active>
+    <description>Email Id should be with &apos;@apollo.com&apos;</description>
+    <errorConditionFormula>RIGHT( Email__c , 11)  &lt;&gt; &quot;@apollo.com&quot;</errorConditionFormula>
+    <errorDisplayField>Email__c</errorDisplayField>
+    <errorMessage>Please provide valid Email. 
+Domain of the Email should be &apos;@apollo.com&apos;</errorMessage>
+</ValidationRule>

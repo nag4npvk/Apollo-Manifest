@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staff_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Staff Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Doctor</fullName>
+                <default>false</default>
+                <label>Doctor</label>
+            </value>
+            <value>
+                <fullName>Nurse</fullName>
+                <default>false</default>
+                <label>Nurse</label>
+            </value>
+            <value>
+                <fullName>Lab Technician</fullName>
+                <default>false</default>
+                <label>Lab Technician</label>
+            </value>
+            <value>
+                <fullName>Ward Boy</fullName>
+                <default>false</default>
+                <label>Ward Boy</label>
+            </value>
+            <value>
+                <fullName>HOD</fullName>
+                <default>false</default>
+                <label>HOD</label>
+            </value>
+            <value>
+                <fullName>Intern</fullName>
+                <default>false</default>
+                <label>Intern</label>
+            </value>
+            <value>
+                <fullName>Pharmacist</fullName>
+                <default>false</default>
+                <label>Pharmacist</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

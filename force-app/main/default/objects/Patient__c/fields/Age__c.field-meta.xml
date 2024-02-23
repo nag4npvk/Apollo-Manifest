@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Age__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(MFLOOR( (TODAY() - Date_of_Birth__c)/365 )) 
+
+
+/*Value(RPAD(TEXT(FLOOR( (TODAY() - Date_of_Birth__c)/365 )), 3 )) 
+TODAY() -  Date_of_Birth__c
+
+IF(
+ISBLANK( DOB__c ),
+NULL,
+FLOOR((TODAY() - DOB__c ) / 365.25)
+)
+*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Age</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

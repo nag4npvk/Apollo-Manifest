@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hospital_Website__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://www.apollohospitals.com/&quot;,  
+IMAGE(&quot;https://nag-5b-dev-ed--c.develop.vf.force.com/resource/1708149178000/Apollo_Hospitals_Logo?&quot;, 
+&quot;Apollo Hospitals&quot;, 100,100), &quot;_self&quot; )
+
+/*
+ HYPERLINK(url, friendly_name [, target]) 
+ IMAGE(image_url, alternate_text [, height, width]) 
+*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Hospital Website</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
