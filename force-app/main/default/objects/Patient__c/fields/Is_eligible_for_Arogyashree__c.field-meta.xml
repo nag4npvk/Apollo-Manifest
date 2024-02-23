@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_eligible_for_Arogyashree__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND( Anual_Income__c &lt;1000000,  Has_Adhar_Card__c ) , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is eligible for Arogyashree</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

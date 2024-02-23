@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Region__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND( ISPICKVAL(Country__c, &quot;India&quot;) ,
+         CONTAINS(&quot;Namsang : Kharsang : Shimla : Kullu : Mumbai : Pune : Ahmedabad : Vadodhara&quot;,  
+                   TEXT(City__c)) ) , 
+   &quot;North India&quot;, 
+   IF( AND( ISPICKVAL(Country__c, &quot;India&quot;) ,
+            CONTAINS(&quot;Hyderabad : Warangal : Visakhapatnam : Vijayawada : Banglore : Mysore&quot; &amp; 
+                     &quot;Chennai : Madhuri : Kochi : Thiruvanathapuram&quot;,  TEXT(City__c)) ) , 
+       &quot;South India&quot;, 
+       &quot;Not an Inidan Region&quot;)) 
+
+
+
+
+
+
+
+/*IF( AND( ISPICKVAL(Country__c, &quot;India&quot;) ,
+           CONTAINS(&quot;Namsang : Kharsang : Shimla : Kullu : Mumbai : Pune : Ahmedabad : Vadodhara&quot;,  TEXT(City__c)) ) , &quot;North India&quot;, &quot;South India&quot;)*/ 
+
+
+
+/*IF( AND( ISPICKVAL( Country__c , &quot;India&quot;) ,
+         ISPICKVAL( City__c , &quot;Hyderabad : Warangal : Visakhapatnam : Vijayawada : Banglore : Mysore&quot; &amp; 
+                               &quot;Chennai : Madhuri : Kochi : Thiruvanathapuram&quot;) ), 
+     &quot;South India&quot;, 
+     IF( AND( ISPICKVAL(Country__c, &quot;India&quot;) , 
+              ISPICKVAL(City__c, &quot;Namsang : Kharsang : Shimla : Kullu : Mumbai : Pune : Ahmedabad&quot; &amp;
+                                 &quot;Vadodhara&quot;) ), 
+         &quot;North India&quot;, 
+         &quot;No an Indian Region&quot;) ) */
+
+/*
+IF( AND( ISPICKVAL( Country__c , &quot;India&quot;) ,
+          ISPICKVAL( City__c , &quot;Hyderabad : Warangal : Visakhapatnam : Vijayawada : Banglore : Mysore&quot; &amp; 
+                               &quot;Chennai : Madhuri : Kochi : Thiruvanathapuram&quot;) ) , 
+
+     AND( ISPICKVAL(Country__c, &quot;India&quot;) , 
+          ISPICKVAL(City__c, &quot;Namsang : Kharsang : Shimla : Kullu : Mumbai : Pune : Ahmedabad&quot; &amp;
+                             &quot;Vadodhara&quot;) ) , 
+ 
+ &quot;Not an Indian Region&quot;) 
+*/
+
+/* CASE(expression, value1, result1, value2, result2,...,else_result)  ISPICKVAL(picklist_field, text_literal) 
+*/
+/*
+Hyderabad
+Warangal
+Visakhapatnam
+Vijayawada
+Banglore
+Mysore
+Chennai
+Madhuri
+Kochi
+Thiruvanathapuram
+Namsang
+Kharsang
+Shimla
+Kullu
+Mumbai
+Pune
+Ahmedabad
+Vadodhara
+*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Region</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

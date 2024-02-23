@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Floor__c</fullName>
+    <externalId>false</externalId>
+    <label>Floor</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Floor 1</fullName>
+                <default>false</default>
+                <label>Floor 1</label>
+            </value>
+            <value>
+                <fullName>Floor 2</fullName>
+                <default>false</default>
+                <label>Floor 2</label>
+            </value>
+            <value>
+                <fullName>Floor 3</fullName>
+                <default>false</default>
+                <label>Floor 3</label>
+            </value>
+            <value>
+                <fullName>Floor 4</fullName>
+                <default>false</default>
+                <label>Floor 4</label>
+            </value>
+            <value>
+                <fullName>Floor 5</fullName>
+                <default>false</default>
+                <label>Floor 5</label>
+            </value>
+            <value>
+                <fullName>Floor 6</fullName>
+                <default>false</default>
+                <label>Floor 6</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
