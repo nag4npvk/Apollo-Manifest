@@ -65,6 +65,10 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>Appolo_Hospitals_UtilityBar</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
 		<members>Patient__c-Patient Layout</members>
 		<name>Layout</name>
 	</types>
