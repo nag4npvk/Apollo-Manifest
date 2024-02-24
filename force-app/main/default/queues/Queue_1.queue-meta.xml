@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>nag4npvk@gmail.com</email>
+    <name>Queue 1</name>
+    <queueMembers>
+        <users>
+            <user>nag@vijaygarusclass.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Staff__c</sobjectType>
+    </queueSobject>
+</Queue>
